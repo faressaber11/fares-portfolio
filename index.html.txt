@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fares Saber Ahmed | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>👋 Hi, I'm <span>Fares Saber Ahmed</span></h1>
+    <p>AI | Cybersecurity | Data Analysis | Web Development</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate student at Delta University for Science & Technology,
+      studying Artificial Intelligence, Cybersecurity, Data Analysis, and Computer Science.
+      I enjoy building projects, learning new technologies, and solving real-world problems.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>💻 Web Development (HTML, CSS, JS, MySQL, C#)</li>
+      <li>🤖 Artificial Intelligence & Machine Learning</li>
+      <li>🔐 Cybersecurity & Data Protection</li>
+      <li>📊 Data Analysis</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Project 1: Smart AI Chatbot</h3>
+      <p>A chatbot powered by AI to answer user queries.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 2: Student Database System</h3>
+      <p>Windows app built with C# and MySQL to manage student records.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: fares@example.com</p>
+    <p>🌐 GitHub: <a href="https://github.com/faressaber11" target="_blank">github.com/faressaber11</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Fares Saber Ahmed. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
