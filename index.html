@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fares Saber Ahmed | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container">
+      <div class="brand">Fares<span>.</span></div>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="btn" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">AI • Cybersecurity • Web • Data</p>
+        <h1>Hi, I'm <span>Fares Saber Ahmed</span></h1>
+        <p class="sub">
+          I build fast, modern, and secure digital experiences powered by
+          Artificial Intelligence, clean code, and data-driven decisions.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Hire Me</a>
+        </div>
+      </div>
+      <div class="hero-card glass">
+        <h3>Currently</h3>
+        <ul>
+          <li>Studying AI @ Delta University</li>
+          <li>Building web apps & dashboards</li>
+          <li>Learning advanced cybersecurity</li>
+        </ul>
+      </div>
+    </div>
+    <div class="blur b1"></div>
+    <div class="blur b2"></div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div class="card glass">
+        <h2>About Me</h2>
+        <p>
+          I'm a Computer Science student focused on Artificial Intelligence,
+          Cybersecurity, Data Analysis, and Web Development. I care about UX,
+          performance, and security—delivering real value with clean architecture.
+        </p>
+      </div>
+      <div class="card glass highlight">
+        <h3>Highlights</h3>
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">PHP</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">C#</span>
+          <span class="chip">Python</span>
+          <span class="chip">ML</span>
+          <span class="chip">Security</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="center">Skills</h2>
+      <div class="cards">
+        <div class="card glass">
+          <h3>Web Development</h3>
+          <p>Responsive UI, REST APIs, auth, dashboards, and MySQL databases.</p>
+        </div>
+        <div class="card glass">
+          <h3>Artificial Intelligence</h3>
+          <p>ML workflows, data preprocessing, simple NLP/vision pipelines.</p>
+        </div>
+        <div class="card glass">
+          <h3>Cybersecurity</h3>
+          <p>Secure auth, hashing, basic hardening, and threat-aware design.</p>
+        </div>
+        <div class="card glass">
+          <h3>Data Analysis</h3>
+          <p>ETL, insights, and clean visual storytelling for decision making.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="center">Projects</h2>
+      <div class="cards">
+        <div class="card glass project">
+          <h3>Smart AI Chatbot</h3>
+          <p>Conversational bot using Python & NLP to answer FAQs efficiently.</p>
+          <a class="link" href="#" aria-disabled="true">Demo soon</a>
+        </div>
+        <div class="card glass project">
+          <h3>Student DB System</h3>
+          <p>WinForms + C# + MySQL app for students & grades management.</p>
+          <a class="link" href="#" aria-disabled="true">Demo soon</a>
+        </div>
+        <div class="card glass project">
+          <h3>Secure Login Boilerplate</h3>
+          <p>Best-practice auth with hashing, validation, and role-based access.</p>
+          <a class="link" href="#" aria-disabled="true">Demo soon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div class="card glass">
+        <h2>Contact</h2>
+        <p>Let’s build something great together.</p>
+        <ul class="contact-list">
+          <li>📧 <a href="mailto:fares.saber@example.com">fares.saber@example.com</a></li>
+          <li>💼 <a href="https://linkedin.com/in/fares-saber" target="_blank">linkedin.com/in/fares-saber</a></li>
+          <li>💻 <a href="https://github.com/faressaber11" target="_blank">github.com/faressaber11</a></li>
+          <li>🛒 <a href="https://www.fiverr.com/" target="_blank">Hire me on Fiverr</a></li>
+        </ul>
+      </div>
+      <div class="card glass note">
+        <h3>Available For</h3>
+        <ul>
+          <li>Full website builds</li>
+          <li>Bug fixes & maintenance</li>
+          <li>Dashboards & data apps</li>
+          <li>Security reviews</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> Fares Saber Ahmed — Crafted with passion.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

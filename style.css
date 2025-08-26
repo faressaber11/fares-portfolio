@@ -1,0 +1,127 @@
+:root{
+  --bg:#0b0f1a;
+  --text:#e6e9f2;
+  --muted:#9aa3b2;
+  --primary:#6ea8fe;      /* أزرق مودرن */
+  --accent:#a78bfa;       /* بنفسجي ناعم */
+  --glass:rgba(255,255,255,.08);
+  --border:rgba(255,255,255,.12);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  color:var(--text);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #1a2540 0%, transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, #2a1f4a 0%, transparent 50%),
+    var(--bg);
+  line-height:1.7;
+}
+
+.container{max-width:1100px;margin:auto;padding:0 20px}
+
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:linear-gradient(180deg, rgba(11,15,26,.9), rgba(11,15,26,.6));
+  border-bottom:1px solid var(--border);
+  backdrop-filter:saturate(140%) blur(10px);
+}
+.nav .container{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;font-size:1.25rem;letter-spacing:.5px}
+.brand span{color:var(--primary)}
+.menu{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+.menu a{
+  color:var(--text);text-decoration:none;font-weight:500;opacity:.9
+}
+.menu a:hover{opacity:1}
+.btn{
+  padding:10px 16px;border-radius:12px;border:1px solid var(--primary);
+  background:linear-gradient(135deg,var(--primary),var(--accent));
+  color:#0b0f1a;text-decoration:none;font-weight:700;transition:.2s;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{
+  background:transparent;color:var(--text);border-color:var(--border)
+}
+.btn.ghost:hover{border-color:var(--text)}
+
+.hero{
+  position:relative;overflow:hidden;padding:80px 0 40px;
+}
+.hero-inner{
+  display:grid;gap:28px;align-items:center;
+  grid-template-columns:1.2fr .8fr;
+}
+.eyebrow{color:var(--muted);letter-spacing:.2em;text-transform:uppercase;font-size:.8rem}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);margin:.3rem 0 1rem}
+.hero h1 span{
+  background:linear-gradient(135deg,var(--primary),var(--accent));
+  -webkit-background-clip:text;background-clip:text;color:transparent
+}
+.sub{color:#cdd4e6;max-width:600px}
+.cta{display:flex;gap:12px;margin-top:18px}
+
+.glass{
+  background:var(--glass);
+  border:1px solid var(--border);
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.06);
+  backdrop-filter:blur(12px);
+}
+.hero-card{
+  padding:22px;
+  animation:pop .5s ease both .1s;
+}
+.hero-card h3{margin:0 0 .4rem}
+.hero-card ul{margin:0;padding-left:18px;color:#cfd6e6}
+
+.blur{
+  position:absolute;filter:blur(80px);opacity:.5;pointer-events:none
+}
+.b1{width:380px;height:380px;background:#6ea8fe33;top:-60px;left:-60px}
+.b2{width:420px;height:420px;background:#a78bfa33;right:-60px;bottom:-60px}
+
+.section{padding:70px 0}
+.center{text-align:center}
+
+.grid-2{display:grid;gap:22px;grid-template-columns:repeat(2,1fr)}
+.cards{
+  display:grid;gap:22px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr))
+}
+.card{padding:22px;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.28)}
+
+.highlight{border-color:#ffffff2a}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.chip{
+  padding:8px 12px;border-radius:999px;border:1px solid var(--border);
+  background:rgba(255,255,255,.06);font-size:.85rem;color:#e7ebf6
+}
+
+.project .link{
+  display:inline-block;margin-top:8px;text-decoration:none;
+  color:var(--primary);font-weight:600
+}
+.project .link[aria-disabled="true"]{opacity:.6;cursor:not-allowed}
+
+.contact-list{list-style:none;padding:0;margin-top:6px}
+.contact-list a{color:#e7ebf6;text-decoration:none;border-bottom:1px dashed #6ea8fe55}
+.contact-list a:hover{border-bottom-color:var(--primary)}
+
+.footer{
+  text-align:center;padding:28px 16px;color:#c7cee2;
+  border-top:1px solid var(--border);background:rgba(0,0,0,.25)
+}
+
+@media (max-width: 900px){
+  .hero-inner{grid-template-columns:1fr}
+  .menu{display:none}
+}
+
+@keyframes pop{
+  from{transform:translateY(8px);opacity:0}
+  to{transform:none;opacity:1}
+}
